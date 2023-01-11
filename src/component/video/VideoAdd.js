@@ -77,7 +77,7 @@ const VideoAdd = ({ editData, setEditData, edu, setEdu, ent, setEnt }) => {
       </Form.Item>
       <Form.Item
         name="turl"
-        label="URL"
+        label="Thumbnail URL"
         wrapperCol={{
           span: 10,
         }}
@@ -106,7 +106,7 @@ const VideoAdd = ({ editData, setEditData, edu, setEdu, ent, setEnt }) => {
       </Form.Item>
       <Form.Item
         name="vurl"
-        label="URL"
+        label="Video URL"
         wrapperCol={{
           span: 10,
         }}

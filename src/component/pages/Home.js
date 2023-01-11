@@ -49,8 +49,22 @@ const Home = () => {
     vurl: "",
   });
   const [pageNo, setPageNo] = useState(0);
-  const [ent, setEnt] = useState([]);
-  const [edu, setEdu] = useState([]);
+  const [ent, setEnt] = useState([
+    {
+      id: 234455,
+      name: "pratik",
+      turl: "https://media.w3.org/2010/05/sintel/poster.png",
+      vurl: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+    },
+  ]);
+  const [edu, setEdu] = useState([
+    {
+      id: 234433355,
+      name: "sonu",
+      turl: "https://media.w3.org/2010/05/bunny/poster.png",
+      vurl: "https://media.w3.org/2010/05/bunny/movie.mp4",
+    },
+  ]);
   // useEffect(() => {
   //   setEdu(vcards);
   // }, [vcards]);
