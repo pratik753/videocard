@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+// import { Container } from "@material-ui/core";
 
-function App() {
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HistroyPage from "./component/pages/HistroyPage";
+
+// import NavBar from "./components/nav_bar/NavBar";
+// import Footer from "./components/nav_bar/Footer";
+import Home from "./component/pages/Home";
+// import Auth from "./components/Auth/Auth";
+// import Admin from "./components/Admin/Admin";
+// import TourDetail from "./components/Tours/TourDetail/TourDetail";
+const App = () => {
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getTours());
+  // }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div maxWidth="lg">
+        {/* <NavBar /> */}
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/historyPage" exact component={HistroyPage} />
+          {/* <Route path="/auth" exact component={Auth} />
+          <Route path="/admin" exact component={Admin} />
+          <Route path="/tourDetail" exact component={TourDetail} /> */}
+        </Switch>
+        {/* <Footer /> */}
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
