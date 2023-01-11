@@ -20,7 +20,7 @@ const CardU = ({ data, id, index, turl, vurl, name, deleteh, edith }) => {
 
     dispatch({
       type: "HISTORYADD",
-      payload: { date: datet.toString(), name: "pratik", vlink: vurl },
+      payload: { date: datet.toString(), name: name, vlink: vurl },
     });
   };
   const deleteHandler = (id) => {
